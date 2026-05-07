@@ -1,4 +1,4 @@
-# Taller Sofia — Tercer Corte (Ruta-Óptima / Logística)
+# Taller Valery Linares — Tercer Corte (Ruta-Óptima / Logística)
 
 Proyecto **RETO 1: LOGÍSTICA — “Ruta-Óptima”**: clasificación de paquetes (Documento / Paquetería / Carga), cotización de envío, manifiestos ordenados por peso y exportación para analítica en Power BI.
 
