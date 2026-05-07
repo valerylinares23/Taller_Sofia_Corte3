@@ -1,0 +1,11 @@
+Ruta absoluta de la base SQLite (fuente principal del sistema):
+/Users/andresc/Desktop/Taller_Sofia_Corte3/ruta_optima/data/ruta_optima.db
+
+Archivos CSV generados para importación en Power BI:
+/Users/andresc/Desktop/Taller_Sofia_Corte3/ruta_optima/pbi_export/destinos.csv
+/Users/andresc/Desktop/Taller_Sofia_Corte3/ruta_optima/pbi_export/paquetes.csv
+/Users/andresc/Desktop/Taller_Sofia_Corte3/ruta_optima/pbi_export/manifiestos.csv
+/Users/andresc/Desktop/Taller_Sofia_Corte3/ruta_optima/pbi_export/v_paquetes_analitica.csv
+/Users/andresc/Desktop/Taller_Sofia_Corte3/ruta_optima/pbi_export/v_resumen_categoria.csv
+/Users/andresc/Desktop/Taller_Sofia_Corte3/ruta_optima/pbi_export/v_resumen_zona.csv
+/Users/andresc/Desktop/Taller_Sofia_Corte3/ruta_optima/pbi_export/v_manifiesto_resumen.csv

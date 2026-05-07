@@ -1,0 +1,5 @@
+paquete_id,referencia,peso_kg,categoria,costo_envio_cop,creado_en,fecha_dia,fecha_mes,destino_codigo,ciudad,zona,factor_costo,estado_manifiesto
+1,INIT-DOC-001,0.25,Documento,9000.0,2026-05-06T19:45:49,2026-05-06,2026-05,BOG-LOC,Bogotá D.C.,Local,1.0,Pendiente
+2,INIT-PQ-002,5.5,Paquetería,36800.0,2026-05-06T19:45:49,2026-05-06,2026-05,MED,Medellín,Nacional,1.28,Pendiente
+3,INIT-PQ-003,18.0,Paquetería,79200.0,2026-05-06T19:45:49,2026-05-06,2026-05,CTG,Cartagena,Nacional,1.32,Pendiente
+4,INIT-CG-004,42.0,Carga,186930.0,2026-05-06T19:45:49,2026-05-06,2026-05,LET,Leticia,Especial,1.55,Pendiente

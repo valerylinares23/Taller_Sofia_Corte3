@@ -1,0 +1,6 @@
+id,codigo,ciudad,zona,factor_costo
+1,BOG-LOC,Bogotá D.C.,Local,1.0
+2,CUND-NORTE,Chía,Cundinamarca,1.12
+3,MED,Medellín,Nacional,1.28
+4,CTG,Cartagena,Nacional,1.32
+5,LET,Leticia,Especial,1.55

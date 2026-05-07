@@ -1,0 +1,46 @@
+Instrucciones Power BI — Ruta-Óptima (Tercer Corte)
+====================================================
+
+1) Generar o actualizar datos
+   - Ejecute primero: python3 main.py (para operar el sistema y poblar la base).
+   - Ejecute: python3 conectar_powerbi.py
+     Esto crea/actualiza los CSV en la carpeta pbi_export/ y deja la ruta
+     absoluta del archivo data/ruta_optima.db en powerbi_connection_meta.txt
+
+2) Abrir Power BI Desktop
+   - Archivo → Obtener datos → Carpeta → seleccione la carpeta pbi_export
+   - Combine y transforme los archivos CSV si lo desea, o impórtelos por separado
+     (recomendado para tableros sencillos: un origen por CSV).
+
+3) Modelo de datos sugerido (relaciones)
+   - paquetes[destino_id] → destinos[id]
+   - paquetes[manifiesto_id] → manifiestos[id]
+   Las vistas v_* ya vienen preparadas para arrastrar campos sin tantos joins.
+
+4) Gráficas mínimas (todas con segmentadores cruzados recomendados)
+   a) Barras: eje Y = costo_total_cop, eje X = categoria
+      Fuente: v_resumen_categoria.csv
+      Filtros: Slicer por zona (si une con v_paquetes_analitica) o por fecha_mes.
+
+   b) Barras o columnas agrupadas: cantidad_paquetes por zona
+      Fuente: v_resumen_zona.csv
+      Filtros: categoria (desde v_paquetes_analitica relacionada en el modelo).
+
+   c) Líneas: SUM(costo_envio_cop) por fecha_dia
+      Fuente: v_paquetes_analitica.csv
+      Filtros: ciudad o destino_codigo, estado_manifiesto.
+
+   d) Tabla + tarjetas (KPI): num_paquetes, peso_total_kg, costo_total_por manifiesto
+      Fuente: v_manifiesto_resumen.csv
+      Filtros: codigo de manifiesto, título.
+
+5) Guardar entrega
+   - Guarde el informe como RutaOptima.pbix en la carpeta ruta_optima/
+     junto a los .py y suba también data/ruta_optima.db a GitHub.
+
+Nota sobre conexión directa al .db
+----------------------------------
+Power BI Desktop no incluye conector nativo de SQLite en todos los equipos; la
+ruta portable es CSV generada desde la misma base con conectar_powerbi.py. Si
+instala un controlador ODBC para SQLite, puede intentar conexión ODBC a
+ruta_optima.db usando la ruta absoluta indicada en powerbi_connection_meta.txt.

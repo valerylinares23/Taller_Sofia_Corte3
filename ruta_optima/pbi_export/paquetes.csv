@@ -1,0 +1,5 @@
+id,referencia,peso_kg,destino_id,categoria,costo_envio_cop,manifiesto_id,creado_en
+1,INIT-DOC-001,0.25,1,Documento,9000.0,,2026-05-06T19:45:49
+2,INIT-PQ-002,5.5,3,Paquetería,36800.0,,2026-05-06T19:45:49
+3,INIT-PQ-003,18.0,4,Paquetería,79200.0,,2026-05-06T19:45:49
+4,INIT-CG-004,42.0,5,Carga,186930.0,,2026-05-06T19:45:49
